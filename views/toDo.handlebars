@@ -1,0 +1,27 @@
+<h1>Hello {{name}} Here is your To Do List!</h1>
+<h2>You have {{toDoCount}} items on your to do list.</h2>
+<form method="post"> 
+ <div>Name of task:
+ <input type="text" name="name" id="toDoName">
+ </div>
+ <div>Your city:
+  <input type="text" name="city" id="cityName">
+ </div>
+<div>Minimum weather for this task:
+  <input type="number" name="minW" id="minW">
+</div>
+  <input type="submit" name="Add Item" value="Add Item">
+</form>
+{{#if toDo}}
+<ul>
+  {{#each toDo}}
+  <li>
+ <h3 style="color:{{this.color}};">{{this.name}}</h3>
+     <form method="post">
+      <input type="hidden" name="id" value="{{this.id}}">
+      <input type="submit" name="Done" value="Mark as Done">
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{/if}}

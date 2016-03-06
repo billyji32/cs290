@@ -1,17 +1,17 @@
 {
-  "name": "hello-world",
+  "name": "task-temp",
   "version": "1.0.0",
-  "description": "Hello world with express and node.js",
+  "description": "User inputs a task, the site adds it to the list sees if weather is good enough to perform that task",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "OSU",
+  "author": "Billy Ji",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.2",
-    "express-session": "^1.11.3",
-    "mysql": "^2.8.0"
-  }
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3"
+     }
 }
